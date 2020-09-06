@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+body #page {
+    background: black;
+    padding: 0;
+    width: auto;
+    z-index: 3;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:active {
+    background: none;
+}
+
+img {
+    border: none;
+}
+
+
+/*--------FONTS--------*/
+
+@font-face {
+    font-family: 'audiowide-regular-webfont';
+    src: url('../fonts/audiowide-regular-webfont.eot');
+    src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
+}
+
+#header {
+    margin: 0;
+    min-height: 60px;
+    padding: 0;
+    width: auto;
+    background-color: red;
+}
+
+#header div {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 60px;
+    padding: 0 10px;
+}
+
+#header div a.logo {
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0 44px 0 0;
+    padding: 0;
+    width: 200px;
+}
+
+#header div a img {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 30px;
+    width: 60px;
+    height: 60px;
+}
+
+#header div ul {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li a {
+    color: black;
+    display: block;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 59px;
+    margin: 0;
+    min-height: 60px;
+    padding: 0 24px;
+    *padding: 0 23px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#header div ul li a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#header div #navigation .selected a {
+    background-color: black;
+    color: white;
+}
+
+#header div ul li.menu {
+    position: relative;
+}
+
+#header div ul li.menu ul {
+    display: block;
+    left: -9999px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    width: 142px;
+    z-index: 50;
+}
+
+#header div ul li.menu:hover ul.primary {
+    left: 31px;
+}
+
+#header div ul li.menu ul li {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li.menu ul li a {
+    background-color: red;
+    color: black;
+    display: block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 0;
+    min-height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#header div ul li.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+#body .header div a.more {
+    background-color: red;
+    color: black;
+    display: block;
+    float: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    height: 49px;
+    line-height: 49px;
+    margin: auto;
+    padding-bottom: auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    width: 180px;
+}
+
+#body .header div a.more:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+#body .header div #blog h1 {
+    color: white;
+    font-family: audiowide-regular-webfont;
+    font-size: 40px;
+    line-height: 23px;
+    margin: 30px auto 20px;
+    min-height: 27px;
+    padding: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#body .header div #blog #flex-direction .blogs {
+    margin: 0px 0px 50px;
+    padding: 0px 0px 50px;
+    display: block;
+    border-bottom: solid;
+    border-color: gray;
+    border-width: 0.5px;
+}
+
+#body .header div #blog #flex-direction .blogs#last {
+    margin: 0px 0px 50px;
+    padding: 0px 0px 50px;
+    display: block;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+#body .header div #blog #flex-direction .blogs img {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+
+#body .header div #blog #flex-direction .blogs div {
+    padding-left: 50px;
+    margin-left: 100px;
+}
+
+#body .header div #blog #flex-direction .blogs .title {
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+}
+
+#body .header div #blog #flex-direction .blogs .time {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 10px;
+}
+
+#body .header div #blog #flex-direction .blogs .info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+#page #footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#footer {
+    background-color: #a3a3a3;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#page #footer div {
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: hidden;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+#page #footer div h1 {
+    color: #FFFFFF;
+    float: left;
+    font-family: audiowide-regular-webfont;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 23px;
+    margin: auto;
+    padding: auto;
+    text-align: left;
+    text-transform: uppercase;
+    width: 480px;
+}
+
+#page div#footer div div {
+    float: left;
+    margin: auto;
+    overflow: visible;
+    padding: auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#page #footer div div a img {
+    width: 40px;
+}
+
+#body .header div {
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: roll;
+}
+
+#wix {
+    max-width: 728px;
+}
+
+#wix a img {
+    width: 100%
+}
