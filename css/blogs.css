@@ -114,7 +114,7 @@ img {
 
 #header div ul li.menu ul {
     display: block;
-    left: -9999px;
+    left: -999px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -125,7 +125,7 @@ img {
 }
 
 #header div ul li.menu:hover ul.primary {
-    left: 31px;
+    left: 0px;
 }
 
 #header div ul li.menu ul li {
