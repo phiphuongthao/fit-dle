@@ -54,7 +54,7 @@
             display: block;
             float: left;
             height: 60px;
-            margin: 0 44px 0 0;
+            margin: 0 20px 0 0;
             padding: 0;
             width: 200px;
         }
@@ -126,7 +126,11 @@
         }
         
         #header div ul li.menu:hover ul.primary {
-            left: 0px;
+            left: 1px;
+        }
+        
+        #header div ul li.menu:hover ul.account {
+            left: 30px;
         }
         
         #header div ul li.menu ul li {

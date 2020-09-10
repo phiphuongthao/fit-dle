@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FIT-DLE Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+    </script>
+
+    <link href="../css/signup.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+
+<script src="js/vids.js" type="text/javascript">
+</script>
+
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div>
+                <a href="index.html" class="logo"><img src="../images/logo.png" alt=""></a>
+                <ul id="navigation">
+                    <li class="selected">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#footer">About</a>
+                    </li>
+                    <li class="menu">
+                        <a href="videos.html">Videos</a>
+                        <ul class="primary ">
+                            <li>
+                                <a href="back.html">Back</a>
+                                <a href="neck.html">Neck</a>
+                                <a href="shoulders.html">Shoulders</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html ">Contact</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Account</a>
+                        <ul class="account">
+                            <li>
+                                <a href="signin.html">Sign In</a>
+                                <a href="signup.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main wrapper">
+            <h1>Clean SignUp Form</h1>
+            <div class="main-agileinfo">
+                <div class="agileits-top">
+                    <form action="#" method="post">
+                        <input id="rum" class="text" type="text" name="Username" placeholder="Username" required="">
+                        <input id="re" class="text email" type="email" name="email" placeholder="Email" required="">
+                        <input id="rp" class="text" type="password" name="password" placeholder="Password" required="">
+                        <input id="rrp" class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+                        <div class="a-text">
+                            <label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+
+                        </div>
+                        <button id="submit" onclick="register()">Sign up</button>
+                    </form>
+                    <p>Have an Account? <a href="signin.html"> Sign In Now!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

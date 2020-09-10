@@ -53,7 +53,7 @@ img {
     display: block;
     float: left;
     height: 60px;
-    margin: 0 44px 0 0;
+    margin: 0 20px 0 0;
     padding: 0;
     width: 200px;
 }
@@ -125,7 +125,11 @@ img {
 }
 
 #header div ul li.menu:hover ul.primary {
-    left: 0px;
+    left: 1px;
+}
+
+#header div ul li.menu:hover ul.account {
+    left: 30px;
 }
 
 #header div ul li.menu ul li {
@@ -180,7 +184,7 @@ img {
 
 #body .header div #fvid {
     width: auto;
-    margin: 20px;
+    margin: 0;
     padding-top: autox;
 }
 
@@ -189,9 +193,9 @@ img {
     float: center;
     font-family: audiowide-regular-webfont;
     font-size: 40px;
-    margin: 10px 0 0 10px;
+    margin: 50px 0 0 10px;
     min-height: 27px;
-    padding: 20px auto 0px;
+    padding: 50px auto 0px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -202,20 +206,19 @@ img {
 
 #body .header div #fvid .videos {
     margin: 50px 0 50px;
-    padding: 20px 0 50px;
+    padding: 20px 0 20px;
     display: block;
     border-bottom: solid;
     border-color: gray;
     border-width: 0.5px;
+    max-height: 250px;
 }
 
 #body .header div #fvid .videos#last {
     margin: 50px 0 50px;
-    padding: 20px 0 50px;
+    padding: 20px 0 20px;
     display: block;
-    border-bottom: solid;
-    border-color: white;
-    border-width: 2px;
+    min-height: 300px;
 }
 
 #body .header div div iframe {

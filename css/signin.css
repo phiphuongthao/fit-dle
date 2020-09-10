@@ -1,0 +1,824 @@
+#header {
+    margin: 0;
+    min-height: 60px;
+    padding: 0;
+    width: auto;
+    background-color: red;
+}
+
+#header div {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 60px;
+    padding: 0 10px;
+}
+
+#header div a.logo {
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 200px;
+}
+
+#header div a img {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 30px;
+    width: 60px;
+    height: 60px;
+}
+
+#header div ul {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li a {
+    color: black;
+    display: block;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 59px;
+    margin: 0;
+    min-height: 60px;
+    padding: 0 24px;
+    *padding: 0 23px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#header div ul li a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#header div ul li.menu {
+    position: relative;
+}
+
+#header div ul li.menu ul {
+    display: block;
+    left: -9999px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    width: 142px;
+    z-index: 50;
+}
+
+#header div ul li.menu:hover ul.primary {
+    left: 1px;
+}
+
+#header div ul li.menu:hover ul.account {
+    left: 30px;
+}
+
+#header div ul li.menu ul li {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header div ul li.menu ul li a {
+    background-color: red;
+    color: black;
+    display: block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 0;
+    min-height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#header div ul li.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'audiowide-regular-webfont';
+    src: url('../fonts/audiowide-regular-webfont.eot');
+    src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+
+/* text align right */
+
+.txt-lt {
+    text-align: left;
+}
+
+
+/* text align left */
+
+.txt-center {
+    text-align: center;
+}
+
+
+/* text align center */
+
+.float-rt {
+    float: right;
+}
+
+
+/* float right */
+
+.float-lt {
+    float: left;
+}
+
+
+/* float left */
+
+.clear {
+    clear: both;
+}
+
+
+/* clear float */
+
+.pos-relative {
+    position: relative;
+}
+
+
+/* Position Relative */
+
+.pos-absolute {
+    position: absolute;
+}
+
+
+/* Position Absolute */
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+
+/* vertical align baseline */
+
+.vertical-top {
+    vertical-align: top;
+}
+
+
+/* vertical align top */
+
+nav.vertical ul li {
+    display: block;
+}
+
+
+/* vertical menu */
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+
+/* horizontal menu */
+
+img {
+    max-width: 100%;
+}
+
+
+/*--- end reset code ---*/
+
+body {
+    font-family: 'Sirin Stencil', cursive;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff !important;
+}
+
+input:-moz-placeholder {
+    color: #fff !important;
+}
+
+input::-moz-placeholder {
+    color: #fff !important;
+}
+
+input:-ms-input-placeholder {
+    color: #fff !important;
+}
+
+
+/* Header */
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.demo-1 .large-header {
+    background-image: url('../images/background_image.jpg');
+    background-position: center bottom;
+    width: 100%;
+}
+
+
+/* Header */
+
+.main-agileits {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.form-agile h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.form-agile {
+    background: rgba(4, 4, 4, 0.56);
+    -webkit-box-shadow: 0px 35px 44px -22px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 35px 44px -22px rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 35px 44px -22px #1f181b;
+    padding: 60px 40px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0px 0;
+    color: red;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-family: audiowide-regular-webfont;
+}
+
+.icon i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.icon {
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    bottom: 26px;
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-sub {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-sub input[type="text"],
+input[type="password"] {
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 15px 40px 15px 10px;
+    letter-spacing: 2px;
+    width: 87%;
+    border: none;
+    border: 1px solid #DCCBCF;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    background: transparent;
+    font-family: 'Sirin Stencil', cursive;
+}
+
+.form-sub input[type="password"] {
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 15px 40px 15px 10px;
+    width: 87%;
+    border: none;
+    border: 1px solid #DCCBCF;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    background: transparent;
+    font-family: 'Sirin Stencil', cursive;
+}
+
+button {
+    background: #fff;
+    color: #000;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Sirin Stencil', cursive;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+button:hover {
+    background: red;
+    color: #ffffff;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+.p-bottom-ls {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 0em;
+    text-align: center;
+    text-transform: none;
+    float: left;
+}
+
+.p-bottom-ls1 {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 0em;
+    text-align: center;
+    text-transform: none;
+    float: right;
+}
+
+.p-bottom-ls a,
+.p-bottom-ls1 a {
+    color: red;
+    outline: none;
+    text-decoration: none;
+}
+
+
+/*--copy-right-starts-here--*/
+
+.copyright p {
+    margin: 0 auto;
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: 'Sirin Stencil', cursive;
+}
+
+.copyright a {
+    color: red;
+    font-weight: bold;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+.copyright a:hover {
+    color: #fff;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+.heading {
+    float: left;
+}
+
+.heading h5 {
+    color: #fff;
+}
+
+.icons {
+    margin-left: 8em;
+}
+
+.social {
+    margin: 3em 0 0;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img.fa.fa-facebook,
+img.fa.fa-twitter,
+img.fa.fa-google {
+    padding: .5em;
+    border: 1px solid #fff;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+img.fa.fa-facebook:hover,
+img.fa.fa-twitter:hover,
+img.fa.fa-google:hover {
+    background: transparent;
+    transition: 1s all;
+}
+
+img.fa.fa-facebook {
+    background: #3b5998;
+}
+
+img.fa.fa-twitter {
+    background: #1da1f2;
+}
+
+img.fa.fa-google {
+    background: white;
+}
+
+
+/*--- Responsive Code ---*/
+
+@media screen and (max-width: 1920px) {
+    .icon {
+        right: 27px;
+    }
+    h1 {
+        margin: 80px 0 40px;
+    }
+    .copyright p {
+        margin: 50px 0px 150px;
+    }
+    .p-bottom-ls1 {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .p-bottom-ws1 {
+        padding-right: 10px;
+    }
+    .icon {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .p-bottom-ls1 {
+        padding-right: 5px;
+    }
+    h1 {
+        margin: 20px 0;
+    }
+    .copyright p {
+        margin: 50px 0px;
+    }
+    .icon {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main-agileits {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .main-agileits {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main-agileits {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-agileits {
+        width: 45%;
+    }
+    .form-sub input[type="text"],
+    .form-sub input[type="password"] {
+        width: 85.5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-agileits {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-agileits {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-agileits {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .main-agileits {
+        width: 60%;
+    }
+    h1 {
+        margin: 35px 0;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .main-agileits {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-agileits {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-agileits {
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .main-agileits {
+        width: 80%;
+    }
+    h1 {
+        margin: 30px 0;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-agileits {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-agileits {
+        width: 95%;
+    }
+    .form-agile {
+        padding: 30px 30px;
+    }
+    .p-bottom-ls {
+        float: none;
+    }
+    .p-bottom-ls1 {
+        padding-right: 0px;
+        margin-top: 10px;
+        float: none;
+    }
+    h1 {
+        margin: 30px 0;
+        font-size: 33px;
+    }
+    .copyright p {
+        margin: 40px 0px;
+        line-height: 28px;
+    }
+    .form-sub input[type="text"],
+    .form-sub input[type="password"] {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .copyright p {
+        margin: 40px 10px 40px;
+    }
+    h1 {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    i.fa.fa-facebook,
+    i.fa.fa-twitter,
+    i.fa.fa-linkedin,
+    i.fa.fa-pinterest-p {
+        padding: .4em;
+        width: 20px;
+        font-size: 16px;
+    }
+    .form-sub input[type="text"],
+    .form-sub input[type="password"] {
+        width: 82%;
+        padding: 13px 40px 13px 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        margin: 20px 0;
+        font-size: 27px;
+        word-spacing: 4px;
+        letter-spacing: 2px;
+    }
+    .icons {
+        margin-left: 6em;
+    }
+    .form-agile {
+        padding: 30px 20px;
+    }
+    .copyright p {
+        margin: 20px 10px 20px;
+    }
+    .icon {
+        right: 5px;
+    }
+    .form-sub {
+        margin-bottom: 5px;
+    }
+}
